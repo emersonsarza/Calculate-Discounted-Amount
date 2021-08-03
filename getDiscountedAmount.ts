@@ -1,4 +1,4 @@
-const getDiscountedAmount = (books) => {
+const getDiscountedAmount = (books: number[]): string => {
   const discount = [0.0, 0.05, 0.1, 0.2, 0.25];
   const totalAmount = books.reduce((total, count) => total + count * 8, 0);
   let booksList = [...books];
